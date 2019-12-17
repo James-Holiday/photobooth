@@ -1,22 +1,37 @@
-import React from "react";
+import React, { Component } from "react";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 
-import slider1 from "../PICS/15219990_344685669226187_5693534225527010647_n.jpg";
-import slider2 from "../PICS/22289624_506843233010429_7770978378955726630_o.jpg";
-import slider3 from "../PICS/22289730_506843163010436_2555845690583214465_o.jpg";
+import slider1 from "../PICS/1.5.jpg";
+import slider2 from "../PICS/1.1.jpg";
+import slider3 from "../PICS/1.0.jpg";
+import slider4 from "../PICS/1.2.jpg";
+import slider5 from "../PICS/1.3.jpg";
+import slider6 from "../PICS/1.4.jpg";
 
-function App() {
-  const slider = (
-    <AwesomeSlider>
-      <div data-src={slider1} />
-      <div data-src={slider2} />
-      <div data-src={slider3} />
-    </AwesomeSlider>
-  );
-}
-export default function() {
-  return;
-  <div className="">Our Booth</div>;
-  // <div className="slider">{slider}</div>;
+export default class Booth extends Component {
+  render() {
+    return (
+      <div className="boothwraper">
+        <h1 className="BTH"></h1>
+        <h2 className="aboutbooth">
+          Somewhere In Time Photo Booth is a high quality photo booth, perfect
+          for any event!
+        </h2>
+        <h2 className="aboutbooth">
+          Unlimited prints, photo book, & props included.
+        </h2>
+        <div className="sliderpics">
+          <AwesomeSlider>
+            <div data-src={slider1} />
+            <div data-src={slider2} />
+            <div data-src={slider3} />
+            <div data-src={slider4} />
+            <div data-src={slider5} />
+            <div data-src={slider6} />
+          </AwesomeSlider>
+        </div>
+      </div>
+    );
+  }
 }

@@ -8,15 +8,24 @@ export default class NavCom extends Component {
 
   render() {
     return (
-      <div className="Buttons">
-        <NavLink exact to="/">
-          Home
-        </NavLink>
-
-        <NavLink to="/booth">Our Booth</NavLink>
-        <NavLink to="/reservation">Reservations</NavLink>
-        <NavLink to="/blog">Blog</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+      <div className="nav-wrapper">
+        <div>
+          <NavLink exact to="/">
+            Home
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to="/booth">Our Booth</NavLink>
+        </div>
+        <div>
+          <NavLink to="/reservation">Reservations</NavLink>
+        </div>
+        <div>
+          <NavLink to="/blog">Blog</NavLink>
+        </div>
+        <div>
+          <NavLink to="/contact">Contact</NavLink>
+        </div>
       </div>
     );
   }

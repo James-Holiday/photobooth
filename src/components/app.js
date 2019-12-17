@@ -4,8 +4,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavCom from "./nav/nav-con";
 import Home from "./home";
 import Booth from "./booth";
+import Reservation from "./reservation";
+import Blog from "./blog";
+import Contact from "./contact";
 
-import Pic1 from "../PICS/17861952_418568771837876_2609521855776451008_n.png";
 import logo from "../PICS/logo2.png";
 
 export default class App extends Component {
@@ -14,20 +16,17 @@ export default class App extends Component {
       <div className="app">
         <img src={logo} />
         <Router>
-          <div className="Buttons">
+          <div>
             <NavCom />
             <Switch>
-              <Route exact path="/home" Component={Home} />
-              <Route path="/booth" Component={Booth} />
+              <Route exact path="/" component={Home} />
+              <Route path="/booth" component={Booth} />
+              <Route path="/reservation" component={Reservation} />
+              <Route path="/blog" component={Blog} />
+              <Route path="/contact" component={Contact} />
             </Switch>
           </div>
         </Router>
-        <div className="HomepagePics">
-          <img src={Pic1} />
-        </div>
-        <div>
-          <img src={logo} />
-        </div>
       </div>
     );
   }
