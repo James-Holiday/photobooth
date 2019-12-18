@@ -1,7 +1,13 @@
+@import "./about.scss";
+@import "./home.scss";
+@import "./contact.scss";
+@import "./reservation.scss";
+
 html {
   font-size: 62.5%; // 1rem is 10px
   background-color: rgb(163, 215, 228);
-  font-family: "Yeseva One", cursive;
+  font-family: "Shadows Into Light", cursive;
+  margin: 3px;
 }
 
 *,
@@ -10,7 +16,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: "montserrat";
+  font-family: "Shadows Into Light", cursive;
 }
 
 body {
@@ -36,7 +42,7 @@ body {
   border-radius: 7px;
   border-color: white;
   padding: 10px;
-  font-family: "Yeseva One", cursive;
+  font-family: "Shadows Into Light", cursive;
   //   width: 15vw;
 }
 
@@ -56,9 +62,9 @@ body {
   color: white;
   border-radius: 7px;
   border-color: white;
-  padding: 10px;
-  font-family: "Yeseva One", cursive;
-  width: 95vw;
+  padding: 30px;
+  font-family: "Shadows Into Light", cursive;
+  width: 77vw;
   display: flex;
   justify-content: space-evenly;
   // border: 1px solid #1d444b;
@@ -78,31 +84,24 @@ body {
   padding: 100px;
   color: black;
   font-size: 15px;
-  font-family: "Yeseva One", cursive;
+  font-family: "Shadows Into Light", cursive;
 }
 
-.homepage {
-  display: grid;
-  justify-items: center;
-}
+// .homepage {
+//   display: flex;
+//   justify-items: sp;
+// }
 
 .HomepagePics {
   padding: 15px;
+  width: 90vw;
 }
 
 .BTH {
   size: 30px;
 }
 
-.sliderpics {
-  width: 70%;
-  height: 70%;
-}
-
-.boothwraper {
-  display: grid;
-  justify-items: center;
-}
-
-.aboutbooth {
+.HR {
+  border: 0.5px solid;
+  width: 90vw;
 }

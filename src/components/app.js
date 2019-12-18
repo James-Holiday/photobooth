@@ -17,7 +17,9 @@ export default class App extends Component {
         <img src={logo} />
         <Router>
           <div>
+            {/* <hr className="HR" /> */}
             <NavCom />
+            {/* <hr className="HR" /> */}
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/booth" component={Booth} />

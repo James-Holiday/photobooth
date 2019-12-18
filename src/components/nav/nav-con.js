@@ -21,9 +21,6 @@ export default class NavCom extends Component {
           <NavLink to="/reservation">Reservations</NavLink>
         </div>
         <div>
-          <NavLink to="/blog">Blog</NavLink>
-        </div>
-        <div>
           <NavLink to="/contact">Contact</NavLink>
         </div>
       </div>
